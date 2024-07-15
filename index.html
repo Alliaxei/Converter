@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+
+    <link rel="stylesheet" href="main.css">
+    <script src="app.js"></script>
+</head>
+<body>
+   <div class="wrapper">
+    <h1>Конвертер валют</h1>
+    <div class="converter-box">
+        <div class="container">
+
+                <div class="item item_start_currency_select">
+                    <select id="start_currency_select">
+                        <option value="USD">USD</option>
+                        <option value="BYN">BYN</option>
+                        <option value="CNY">CNY</option>
+                    </select>
+                </div>
+                <div class="item item_button_change">
+                    <button class="button_change"></button></div>
+                <div class="item item_end_currency_select">
+                    <select id="end_currency_select">
+                        <option value="USD">USD</option>
+                        <option value="BYN">BYN</option>
+                        <option value="CNY">CNY</option>
+                    </select>
+                </div>
+                <div class="item item_start_currency">
+                    <input class="input_val" type="number" min="0" step="1"></div>
+                <div class="item item_5"></div>
+                <div class="item item_res_currency">
+                    <input class="output_val" type="number" min="0" step="1">
+                </div>
+                <div class="item item_7"></div>
+                <div class="item item_convert">
+                    <button class="button_convert">Конвертировать</button></div>
+                <div class="item item_button_reset">
+                    <button class="button_reset">Сбросить</button></div>
+            </div>
+        </div>
+    </div>
+   
+</body>
+
+
+</html>

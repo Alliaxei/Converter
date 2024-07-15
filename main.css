@@ -1,0 +1,111 @@
+body {
+    display:flex; 
+    justify-content: center; 
+    align-items: center;
+    padding: 20vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h1 {
+    text-align: center;
+}
+.item {
+    /* border: 1px solid black; */
+    padding: 10px;
+    align-items: center;
+    display: flex;
+
+}
+.container {
+    display: grid;
+    grid-template-columns: 100px  140px  100px;
+    grid-template-rows: 70px 50px 50px;
+}
+
+.converter-box {
+    border: 1px solid EDC5AB;
+    border-radius: 10px;
+    /* box-shadow: 0 0px 10px #EDC5AB; */
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.item_convert {
+    justify-content: center;
+    align-items: center;
+}
+
+.input_val {
+    width: 70px;
+}
+
+.output_val {
+    width: 70px;
+}
+
+#start_currency_select {
+    width: 100%;
+}
+
+#end_currency_select {
+    width: 100%;
+}
+
+.item_button_change {
+    align-self: flex-end;
+    justify-self: center;
+}
+
+.button_convert {
+    background-color: #8B9D77;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.button_convert:hover {
+    background-color: #6B7D57 ;
+}
+
+.button_convert:active {
+    transform: translateY(2px);
+    box-shadow: none;
+}
+
+.button_change {
+    background-image: url(./img/change_negate.png);
+    background-size: contain;
+    width: 31px; 
+    height: 30px;
+    
+    background-color: #8B9D77;
+   
+    
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.button_change:hover {
+    background-color: #6B7D57;
+}
+
+.button_change:active {
+    transform: translateY(2px);
+    box-shadow: none;
+}
+
+.button_reset {
+    margin-left: auto;
+
+    background-color: transparent;
+    border: 2px solid #8B9D77;
+    border-radius: 5px;
+
+    box-shadow: 0px 4px 8px  rgba(0, 0, 0, 0.1);
+}
+.button_reset:hover {
+    border-color: #6B7D57;
+}
